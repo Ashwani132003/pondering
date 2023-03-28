@@ -1,29 +1,12 @@
 import streamlit as st
 
 from streamlit_option_menu import option_menu
-import streamlit.components.v1 as components
+
 
 import home, trending, test, your, about
 
 
-components.html(
-    """
-    <head>
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1798673929792920"
-    crossorigin="anonymous"></script>
-    </head>
-    
-    """
-)
 
-st.markdown(
-    """
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1798673929792920"
-     crossorigin="anonymous"></script>
-    """,
-    unsafe_allow_html = True
-)
 
 class MultiApp:
 
