@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 
-import home, trending, account, your, about
+import home, trending, account, your, about, buy_me_a_coffee
 st.set_page_config(
         page_title="Pondering",
 )
@@ -27,7 +27,7 @@ class MultiApp:
         with st.sidebar:        
             app = option_menu(
                 menu_title='Pondering ',
-                options=['Home','Account','Trending','Your Posts','about'],
+                options=['Home','Account','Trending','Your Posts','about','Buy_me_a_coffee'],
                 icons=['house-fill','person-circle','trophy-fill','chat-fill','info-circle-fill'],
                 menu_icon='chat-text-fill',
                 default_index=1,
@@ -50,6 +50,8 @@ class MultiApp:
             your.app()
         if app == 'about':
             about.app()    
+        if app=='Buy_me_a_coffee':
+            buy_me_a_coffee.app()    
              
           
              

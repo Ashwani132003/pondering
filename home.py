@@ -48,5 +48,17 @@ def app():
     for doc in docs:
         d=doc.to_dict()
         try:
-            st.text_area(label=':green[Posted by:] '+':orange[{}]'.format(d['Username']),value=d['Content'][-1],height=20)
+            st.markdown("""
+                <style>
+
+                .stTextArea [data-baseweb=base-input] [disabled=""]{
+                    # background-color: #e3d8c8;
+                    -webkit-text-fill-color: white;
+                }
+                </style>
+                """,unsafe_allow_html=True)
+            
+            st.text_area(label=':green[Posted by:] '+':orange[{}]'.format(d['Username']), value=d['Content'][-1], height=20, disabled=True)
+
+            # st.text_area(label=':green[Posted by:] '+':orange[{}]'.format(d['Username']),value=d['Content'][-1],height=20)
         except: pass

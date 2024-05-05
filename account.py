@@ -8,7 +8,7 @@ import requests
 
 
 cred = credentials.Certificate("pondering-5ff7c-c033cfade319.json")
-firebase_admin.initialize_app(cred)
+# firebase_admin.initialize_app(cred)
 def app():
 # Usernm = []
     st.title('Welcome to :violet[Pondering] :sunglasses:')
