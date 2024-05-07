@@ -1,4 +1,4 @@
 firebase_admin
 streamlit
 streamlit_option_menu
-dotenv-python
+python-dotenv
