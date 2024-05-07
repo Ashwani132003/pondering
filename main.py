@@ -17,10 +17,10 @@ st.markdown(
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', {os.getenv('analytics_tag')});
+            gtag('config', os.getenv('analytics_tag'));
         </script>
     """, unsafe_allow_html=True)
-
+print(os.getenv('analytics_tag'))
 
 
 class MultiApp:
